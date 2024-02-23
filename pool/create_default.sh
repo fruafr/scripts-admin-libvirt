@@ -7,7 +7,7 @@
 
 echo "Libvirt/KVM - POOLS - Creation of default pool in /var/lib/libvirt/images - Task starting..."
 
-SCRIPT_DIR=$( cd-- "$( dirname -- "${BASH_SOURCE[0]}")"&> /dev/null && pwd)
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 sudo bash $SCRIPT_DIR/create.sh default /var/lib/libvirt/images
 echo "KVM - POOLS - default created"
