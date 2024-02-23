@@ -40,7 +40,7 @@ while getopts ":h" option; do
 done
 
 
-if [[ $# -ne 4 ]]; then
+if [[ $# -ne 2 ]]; then
   echo "Error: Two arguments are required: network name, path to xml config file. Use -h for help."
   exit 1
 fi
