@@ -9,7 +9,7 @@ echo "Libvirt/KVM - Allowing forwarding in /etc/sysctl.conf - Task Starting"
 
 echo 'Enable IPv4 forwarding in /etc/sysctl.conf'
 sudo echo 'net.ipv4.ip_forward=1' | sudo tee -a /etc/sysctl.conf > /dev/null
-echo 'Done"
+echo 'Done'
 
 echo 'Enable IPv4 forwarding in /etc/sysctl.conf'
 sudo echo 'net.ipv6.conf.all.forwarding=1' | sudo tee -a /etc/sysctl.conf > /dev/null
